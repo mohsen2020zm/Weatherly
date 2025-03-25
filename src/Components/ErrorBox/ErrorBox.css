@@ -1,0 +1,40 @@
+.main-massage-div{
+    width: 15rem;
+    height: 7rem;
+    background-color: #393e46;
+    box-shadow: 0px 0px 12px 1px #00000078;
+    border-radius: 10px;
+    margin: 0.5rem;
+    position: fixed;
+    top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.2s;
+    z-index: 2;
+}
+.box-massage-text{
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 1rem;
+    color: #f7f7f7;
+}
+.main-massage-div > svg{
+    font-size: 3.5rem;
+    color: #6990d8;
+}
+
+@media only screen and (max-width: 480px){
+    .main-massage-div{
+        width: 12rem;
+        height: 6rem;
+        margin: 0;
+    }
+    .box-massage-text{
+        font-size: 0.9rem;
+    }
+    .main-massage-div > svg{
+        font-size: 3.2rem;
+    }
+}

@@ -1,0 +1,33 @@
+.forecats-main-div{
+    width: 20rem;
+    height: 25rem;
+    background-color: #393e46;
+    border-radius: 10px;
+}
+.forecats-title{
+    font-size: 1.8rem;
+    color: #eeeeee;
+    margin: 0;
+    padding: 1.5rem 1rem;
+}
+.forecats-div{
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 992px){
+    .forecats-main-div{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .forecats-main-div{
+        height: 20rem;
+    }
+    .forecats-title{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,75 @@
+.world-for-main-div{
+    width: 39rem;
+    height: 9rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+.world-forecat-add-city-div{
+    width: 9rem;
+    height: 9rem;
+    border: 2px dashed #eeeeee;
+    border-radius: 10px;
+}
+.world-forecat-add-city-btn{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #6990d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translate(3.25rem, -1.2rem);
+    cursor: pointer;
+}
+.world-forecat-add-city-btn svg{
+    font-size: 2.5rem;
+    color: #eeeeee;
+}
+.world-forecat-add-title{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #eeeeee;
+    margin: 1.8rem 0 1rem 0;
+}
+.world-forecat-add-des{
+    text-align: center;
+    font-size: 0.9rem;
+    color: #eeeeee;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px){
+    .world-for-main-div{
+        width: 20rem;
+        height: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .world-forecat-add-city-div{
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .world-for-main-div{
+        width: 18rem;
+    }
+    .world-forecat-add-city-div{
+        width: 8rem;
+        height: 8rem;
+        margin-bottom: 1.5rem;
+    }
+    .world-forecat-add-city-btn{
+        width: 2rem;
+        height: 2rem;
+        transform: translate(3rem, -1rem);
+    }
+    .world-forecat-add-title{
+        font-size: 1.2rem;
+        margin: 1.8rem 0 0.5rem 0;
+    }
+    .world-forecat-add-des{
+        font-size: 0.8rem;
+    }
+}

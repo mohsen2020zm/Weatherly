@@ -1,0 +1,24 @@
+.forecat-main-div{
+    width: 100%;
+    height: 5rem;
+    border-radius: 10px;
+    background-color: #232931;
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+.forecat-temprature, .forecat-time{
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+@media only screen and (max-width: 480px){
+    .forecat-main-div{
+        height: 4rem;
+    }
+    .forecat-temprature, .forecat-time{
+        font-size: 1.2rem;
+    }
+}
