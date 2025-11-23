@@ -50,6 +50,13 @@ REACT_APP_WEATHER_API_KEY=your_api_key_here
 
 ---
 
+## 🌐 Live Demo
+```
+https://devserver-main--weatherly-ll.netlify.app/
+```
+
+---
+
 ## 📄 License
 
 This project is licensed under the **MIT License** – feel free to use, modify, and share it.
