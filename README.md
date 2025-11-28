@@ -52,7 +52,7 @@ REACT_APP_WEATHER_API_KEY=your_api_key_here
 
 ## 🌐 Live Demo
 ```
-https://devserver-main--weatherly-ll.netlify.app/
+https://mohsen2020zm.github.io/Weatherly
 ```
 
 ---
