@@ -20,7 +20,7 @@
 To run Weatherly locally, follow these steps:
 
 ```bash
-git clone https://github.com/your-username/Weatherly.git
+git clone https://github.com/mohsen2020zm/Weatherly
 cd Weatherly
 npm install
 npm start
