@@ -1,9 +1,9 @@
-import './App.css';
-import Header from './Components/Header/Header';
-import Main from './Components/Main/Main';
+import './App.css'
+import Header from './Components/Header/Header'
+import Main from './Components/Main/Main'
 import { Provider } from 'react-redux'
-import { Store } from './Store'
-import { useEffect } from 'react';
+import { Store } from './redux/Store'
+import { useEffect } from 'react'
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
         <Main />
       </Provider>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

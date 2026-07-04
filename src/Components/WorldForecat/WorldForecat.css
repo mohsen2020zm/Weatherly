@@ -6,14 +6,14 @@
     align-items: center;
 }
 .world-forecat-add-city-div{
-    width: 9rem;
-    height: 9rem;
-    border: 2px dashed #eeeeee;
+    width: 8.75rem;
+    height: 8.75rem;
+    border: 2px dashed var(--text-color);
     border-radius: 10px;
 }
 .world-forecat-add-city-btn{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.4rem;
+    height: 2.4rem;
     border-radius: 50%;
     background-color: #6990d8;
     display: flex;
@@ -24,19 +24,17 @@
     cursor: pointer;
 }
 .world-forecat-add-city-btn svg{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #eeeeee;
 }
 .world-forecat-add-title{
     text-align: center;
     font-size: 1.3rem;
-    color: #eeeeee;
     margin: 1.8rem 0 1rem 0;
 }
 .world-forecat-add-des{
     text-align: center;
     font-size: 0.9rem;
-    color: #eeeeee;
     margin: 0;
 }
 

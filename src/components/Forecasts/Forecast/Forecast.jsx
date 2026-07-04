@@ -1,8 +1,8 @@
-import './Forecat.css'
+import './Forecast.css'
 import { useSelector } from 'react-redux'
 import useConvert from '../../../Hooks/useConvert'
 
-export default function Forecat({temp, time}) {
+export default function Forecast({temp, time}) {
 
   const selector = useSelector(state => state.weather)
   const convert = useConvert(temp, selector.tempType)
@@ -16,9 +16,9 @@ export default function Forecat({temp, time}) {
   }
 
   return (
-    <div className='forecat-main-div'>
-        <p className="forecat-temprature">{convert}°</p>
-        <p className="forecat-time">{formatTime(time)}</p>
+    <div className='forecast-main-div'>
+        <p className="forecast-temprature">{convert}°</p>
+        <p className="forecast-time">{formatTime(time)}</p>
     </div>
   )
 }

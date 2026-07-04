@@ -1,5 +1,13 @@
+:root{
+  --bg-color: #232931;
+  --elems-color: #393e46;
+  --text-color: #eeeeee;
+  --loading-color: #ffffff0f;
+}
+
 body{
-  background-color: #232931;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
   font-family: tahoma;
@@ -15,6 +23,15 @@ input:focus, textarea:focus{
   outline: none;
 }
 
+@keyframes loading {
+    0% {
+        left: -4rem;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
 @media only screen and (max-width: 992px){
   .container{
       max-width: 624px;
@@ -27,6 +44,6 @@ input:focus, textarea:focus{
 }
 @media only screen and (max-width: 480px){
   .container{
-      max-width: 100%;
+      max-width: 280px;
   }
 }

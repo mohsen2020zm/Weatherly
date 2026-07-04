@@ -1,69 +1,85 @@
-# 🌦️ Weatherly
+# 🌤️ Weatherly
 
-**Weatherly** is a responsive weather web application built with **React.js**. It allows users to search for any city worldwide and get real-time weather data and forecasts. Weatherly displays temperature in both **Celsius** and **Fahrenheit**, and provides a clean, modern interface for a great user experience.
-
----
-
-## 🚀 Features
-
-- 🔍 Search any city to get real-time weather information
-- 🌡️ Toggle temperature units (Celsius / Fahrenheit)
-- 📅 View multi-day weather forecasts
-- 🌍 Supports global cities
-- 📱 Fully responsive design (mobile, tablet, desktop)
-- ⚡️ Fast and intuitive UI
+A modern and responsive weather web application built with **React** and **Vite** that allows users to search for any city and view current weather conditions along with a multi-day forecast.
 
 ---
 
-## 📦 Installation & Setup
+## ✨ Features
 
-To run Weatherly locally, follow these steps:
-
-```bash
-git clone https://github.com/mohsen2020zm/Weatherly
-cd Weatherly
-npm install
-npm start
-```
-
-Then open your browser and go to `http://localhost:3000`.
-
----
-
-## ⚙️ API Configuration
-
-Weatherly uses the **OpenWeather API** to fetch weather data. To run the app, you need to get a free API key from [https://openweathermap.org/api](https://openweathermap.org/api), then create a `.env` file in the root of the project with the following content:
-
-```
-REACT_APP_WEATHER_API_KEY=your_api_key_here
-```
+* 🔍 Search any city to get real-time weather information
+* 📅 Multi-day weather forecast
+* 🌙 Dark Mode / ☀️ Light Mode
+* 🌡️ Switch between **Celsius (°C)** and **Fahrenheit (°F)**
+* ⚡ Fast development and build using **Vite**
+* 📱 Responsive design
 
 ---
 
 ## 🛠️ Built With
 
-- [React.js](https://reactjs.org/)
-- [React Redux](https://react-redux.js.org/) – for state management
-- [React Icons](https://react-icons.github.io/react-icons/) – for icons
-- [OpenWeather API](https://openweathermap.org/api)
-- HTML5 & CSS3
+* React
+* Vite
+* Redux (React Redux)
+* OpenWeather API
+* React Icons
+* HTML5
+* CSS3
+* JavaScript (ES6+)
 
 ---
 
-## 🌐 Live Demo
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/mohsen2020zm/Weatherly
 ```
-https://mohsen2020zm.github.io/Weatherly
+
+### Navigate to the project
+
+```bash
+cd Weatherly
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm run dev
 ```
 
 ---
 
-## 📄 License
+## 🔑 Environment Variables
 
-This project is licensed under the **MIT License** – feel free to use, modify, and share it.
+This project uses the **OpenWeather API**.
+
+Create a `.env` file in the project root and add your API key:
+
+```env
+VITE_OPENWEATHER_API_KEY=YOUR_API_KEY
+```
+
+You can get your API key from:
+
+https://openweathermap.org/api
 
 ---
 
 ## 🤝 Contributing
 
-Pull requests and feature suggestions are welcome!  
-Please open an issue first to discuss what you’d like to change.
+Contributions, issues, and feature requests are welcome.
+
+Feel free to fork the repository and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.

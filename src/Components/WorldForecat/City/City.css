@@ -1,14 +1,13 @@
 .city-div{
     width: 9rem;
     height: 9rem;
-    background-color: #393e46;
+    background-color: var(--elems-color);
     border-radius: 10px;
-    color: #eeeeee;
     margin-left: 1rem;
 }
 .city-weather-icon{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.4rem;
+    height: 2.4rem;
     border-radius: 50%;
     background-color: #6990d8;
     display: flex;
@@ -19,7 +18,7 @@
     cursor: pointer;
 } 
 .city-weather-icon svg{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #eeeeee;
 }
 .city-title{

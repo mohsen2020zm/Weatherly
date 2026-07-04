@@ -1,10 +1,10 @@
 import './WorldForecat.css'
-import City from './City/City';
-import CityLoading from './CityLoading/CityLoading';
-import Modal from '../Modal/Modal';
-import ErrorBox from '../ErrorBox/ErrorBox';
-import { IoMdAdd } from "react-icons/io";
-import { useEffect, useState } from 'react';
+import City from './City/City'
+import CityLoading from './CityLoading/CityLoading'
+import Modal from '../Modal/Modal'
+import ErrorBox from '../ErrorBox/ErrorBox'
+import { IoMdAdd } from "react-icons/io"
+import { useEffect, useState } from 'react'
 
 export default function WorldForecat() {
 
@@ -37,10 +37,14 @@ export default function WorldForecat() {
   useEffect(() => {
     firstFetch()
   },[])
+
+  useEffect(() => {
+    document.body.style.overflow = showModal ? 'hidden' : 'auto'
+  },[showModal])
   
-  const errorHandler = mass => {
+  const errorHandler = mess => {
     setErrorState({
-      massage: mass,
+      message: mess,
       left: '0.5rem'
     })
     setTimeout(() =>{

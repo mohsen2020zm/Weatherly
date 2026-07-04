@@ -1,11 +1,10 @@
 .weather-status-main-div{
     width: 39rem;
     height: 14rem;
-    background-color: #393e46;
+    background-color: var(--elems-color);
     border-radius: 10px;
     display: flex;
     align-items: center;
-    color: #eeeeee;
 }
 .weather-status-l-div{
     width: 40%;
@@ -49,6 +48,11 @@
     text-align: center;
     margin: 0;
 }
+.weather-status-message{
+    font-size: 1.8rem;
+    margin: 0 auto;
+    text-align: center;
+}
 
 @media only screen and (max-width: 768px){
     .weather-status-main-div{
@@ -60,11 +64,11 @@
     .weather-status-bold-p span , .weather-status-p{
         font-size: 0.8rem;
     }
-    .weather-status-city-div{
+    .weather-status-city-div, .weather-status-child-div{
         height: 6.5rem;
     }
-    .weather-status-child-div{
-        height: 6.5rem;
+    .weather-status-message{
+        font-size: 1.6rem;
     }
 }
 @media only screen and (max-width: 480px){
@@ -87,5 +91,8 @@
     }
     .weather-status-r-div{
         padding-right: 0.5rem;
+    }
+    .weather-status-message{
+        font-size: 1.2rem;
     }
 }

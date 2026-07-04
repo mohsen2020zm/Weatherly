@@ -10,12 +10,6 @@
     flex-direction: column;
     align-items: flex-start;
 }
-.main-massage{
-    font-size: 2.5rem;
-    color: #eeeeee;
-    text-align: center;
-    margin-top: 10rem;
-}
 
 @media only screen and (max-width: 992px){
     .main-flex-div{
@@ -33,15 +27,5 @@
     }
     .main-l-flex-div{  
         align-items: center;
-    }
-    .main-massage{
-        font-size: 1.6rem;
-        margin-top: 7rem;
-    }
-}
-@media only screen and (max-width: 480px){
-    .main-massage{
-        font-size: 1.4rem;
-        margin-top: 5rem;
     }
 }

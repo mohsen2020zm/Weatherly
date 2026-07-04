@@ -1,21 +1,48 @@
 import './Header.css'
 import { IoSearchSharp } from "react-icons/io5";
+import { MdNightlight } from "react-icons/md";
+import { MdLightMode } from "react-icons/md";
 import { useEffect, useState } from 'react';
-import { setName, setTempType } from '../../Store';
+import { setName, setTempType } from '../../redux/Store';
 import { useDispatch, useSelector } from 'react-redux'
 
 export default function Header() {
-
+  
   const [search, setSearch] = useState('')
   const [tempBtnStyle, setTempBtnStyle] = useState('0')
+  const [themeMode, setThemeMode] = useState('dark')
   
   const date = new Date()
-
+  
   const Selector = useSelector(state => state.weather)
-  useEffect(() => Selector.tempType == 'f' ? setTempBtnStyle('translateX(2.5rem)') : setTempBtnStyle('translateX(0)'),[])
-
   const disPatch = useDispatch()
   
+  const themes = {
+    dark: {
+      "--bg-color": "#232931",
+      "--elems-color": "#393e46",
+      "--text-color": "#eeeeee",
+      "--loading-color": "#ffffff0f"
+    },
+    light: {
+      "--bg-color": "#dbe0eb",
+      "--elems-color": "#f4f8ff",
+      "--text-color": "#303438",
+      "--loading-color": "#0000000f"
+    }
+  }
+
+  useEffect(() => {
+    if(localStorage.getItem('weatherlytheme') === 'light'){
+      setThemeMode('light')
+      applyTheme('light')
+    }else{
+      setThemeMode('dark')
+      applyTheme('dark')
+    }
+    Selector.tempType == 'f' ? setTempBtnStyle(`translateX(${window.innerWidth > 768 ? '2.5rem' : '2rem'})`) : setTempBtnStyle('translateX(0)')
+  },[])
+
   const searchCityHandler = () => {
     if(search.length > 0){
       disPatch(setName({name: search}))
@@ -27,6 +54,23 @@ export default function Header() {
     setTempBtnStyle(`translateX(${tran})`)
     localStorage.setItem('weatherlytemptype', tempType)
     disPatch(setTempType({type: tempType}))
+  }
+
+  const changethemeMode = () => {
+    if(themeMode === 'light'){
+      setThemeMode('dark')
+      applyTheme('dark')
+      localStorage.setItem('weatherlytheme', 'dark')
+    }else{
+      setThemeMode('light')
+      applyTheme('light')
+      localStorage.setItem('weatherlytheme', 'light')
+    }
+  }
+
+  const applyTheme = theme => {
+    const root = document.documentElement
+    Object.entries(themes[theme]).forEach(([key, value]) => root.style.setProperty(key, value))
   }
   
   return (
@@ -41,16 +85,19 @@ export default function Header() {
                 </div>
                 <input
                 type="text" 
-                placeholder="Search  city..." 
+                placeholder="City Name..." 
                 className='header-search-input'
                 value={search}
                 onChange={e => setSearch(e.target.value)}
                 onKeyDown={e => e.key == 'Enter' && searchCityHandler()}/>
               </div>
+              <div className='change-theme-btn' onClick={changethemeMode}>
+                {themeMode === 'light' ? <MdNightlight /> : <MdLightMode />}
+              </div>
               <div className="header-temprature-type-main-div">
                 <div className="header-temprature-selection" style={{transform: tempBtnStyle}}></div>
                 <p className="header-temprature-c" onClick={() => changeType('0', 'c')}>C °</p>
-                <p className="header-temprature-f" onClick={() => changeType('2.5rem', 'f')}>F °</p>
+                <p className="header-temprature-f" onClick={() => changeType(window.innerWidth > 768 ? '2.5rem' : '2rem', 'f')}>F °</p>
               </div>
             </div>
           </div>

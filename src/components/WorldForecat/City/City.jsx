@@ -1,7 +1,7 @@
 import './City.css'
 import useConvert from '../../../Hooks/useConvert'
 import { useSelector } from 'react-redux'
-import { IoClose } from "react-icons/io5";
+import { IoClose } from "react-icons/io5"
 
 export default function City({city, max, min, onDelete}) {
 
