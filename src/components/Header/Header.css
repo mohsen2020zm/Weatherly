@@ -1,0 +1,147 @@
+.header-flex-main-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-date{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.header-right-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-search-input-div{
+    width: 16rem;
+    height: 1.8rem;
+    border-radius: 10px;
+    background-color: var(--elems-color);
+    overflow: hidden;
+}
+.header-search-input-icon-div{
+    width: 2rem;
+    height: 1.8rem;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.header-search-input-icon-div svg{
+    font-size: 1.5rem;
+    color: #6990d8;
+}
+.header-search-input{
+    width: 13rem;
+    height: 1.8rem;
+    border: none;
+    background-color: var(--elems-color);
+    padding: 0;
+    font-family: tahoma;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.header-search-input::placeholder{
+    font-family: tahoma;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+.change-theme-btn{
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-left: 0.5rem;
+    background-color: var(--elems-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.change-theme-btn svg{
+    font-size: 1.5rem;
+    color: #6990d8;
+}
+.header-temprature-type-main-div{
+    width: 5rem;
+    height: 1.8rem;
+    background-color: var(--elems-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0.5rem;
+    overflow: hidden;
+}
+.header-temprature-c, .header-temprature-f{
+    width: 2.5rem;
+    height: 1.8rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.header-temprature-selection{
+    width: 2.5rem;
+    height: 1.8rem;
+    background-color: #6990d8;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 0;
+    transition: 0.2s all;
+}
+
+@media only screen and (max-width: 768px){
+    .header-date{
+        font-size: 1.25rem;
+    }
+    .header-search-input-div{
+        width: 11rem;
+        height: 1.5rem;
+    }
+    .header-search-input-icon-div{
+        height: 1.5rem;
+    }
+    .header-search-input-icon-div svg{
+        font-size: 1.3rem;
+    }
+    .header-search-input{
+        width: 8rem;
+        height: 1.5rem;
+        font-size: 0.9rem;
+    }
+    .header-search-input::placeholder{
+        font-size: 0.9rem;
+    }
+    .change-theme-btn{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .change-theme-btn svg{
+        font-size: 1.2rem;
+    }
+    .header-temprature-type-main-div{
+        width: 4rem;
+        height: 1.5rem;
+    }
+    .header-temprature-c, .header-temprature-f{
+        width: 2rem;
+        font-size: 1rem;
+    }
+    .header-temprature-selection{
+        width: 2rem;
+        height: 1.5rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .header-flex-main-div{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+    .header-right-div{
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,56 @@
+.city-div-load{
+    width: 9rem;
+    height: 9rem;
+    background-color: var(--elems-color);
+    border-radius: 10px;
+    margin-left: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+.city-div-load::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -4rem;
+    height: 9rem;
+    width: 4rem;
+    background: linear-gradient(to right, transparent 0%, var(--loading-color) 50%, transparent 100%);
+    animation: loading 1.2s infinite;
+}
+.city-title-load{
+    height: 1.6rem;
+    width: 7rem;
+    margin: 2.3rem auto 1.5rem auto;
+    border-radius: 10px;
+    background-color: var(--loading-color);
+}
+.city-des-load{
+    height: 1.5rem;
+    width: 5rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: var(--loading-color);
+}
+
+@media only screen and (max-width: 768px){
+    .city-div-load{
+        margin-bottom: 2rem;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 480px){
+    .city-div-load{
+        width: 8rem;
+        height: 8rem;
+        margin-bottom: 1.5rem;
+    }
+    .city-title-load{
+        height: 1.2rem;
+        width: 6.6rem;
+        margin-top: 2rem;
+    }
+    .city-des-load{
+        height: 1.3rem;
+        width: 4.7rem;
+    }
+}

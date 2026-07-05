@@ -1,0 +1,115 @@
+.weather-status-load-main-div{
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.weather-status-load-main-div::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -4rem;
+    height: 14rem;
+    width: 4rem;
+    background: linear-gradient(to right, transparent 0%, var(--loading-color) 50%, transparent 100%);
+    animation: loading 1.2s infinite;
+}
+.weather-status-load-l-div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weather-status-load-r-div{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.weather-status-load-child-div{
+    width: 7.5rem;
+    height: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.weather-status-load-city-div{
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.weather-status-load-bolder-p{
+    width: 7.09rem;
+    height: 2.43rem;
+    background-color: var(--loading-color);
+    border-radius: 10px;
+    margin: 0.5rem 0;
+}
+.weather-status-load-bold-p{
+    width: 3.56rem;
+    height: 2.43rem;
+    background-color: var(--loading-color);
+    border-radius: 10px;
+    margin: 0.5rem 0;
+}
+.weather-status-load-p{
+    width: 4.68rem;
+    height: 1.06rem;
+    background-color: var(--loading-color);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .weather-status-load-main-div{
+        width: 28rem;
+    }
+    .weather-status-load-bolder-p{
+        width: 5.27rem;
+        height: 1.81rem;
+    }
+    .weather-status-load-bold-p{
+        width: 2.68rem;
+        height: 1.81rem;
+    }
+    .weather-status-load-p{
+        width: 4.03rem;
+        height: 1rem;
+    }
+    .weather-status-load-city-div, .weather-status-load-child-div{
+        height: 6.5rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .weather-status-load-main-div{
+        width: 100%;
+        height: 10rem;
+    }
+    .weather-status-load-city-div{
+        height: 4.5rem;
+    }
+    .weather-status-load-child-div{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .weather-status-load-bolder-p{
+        width: 4.22rem;
+        height: 1.43rem;
+    }
+    .weather-status-load-bold-p{
+        width: 2.14rem;
+        height: 1.43rem;
+    }
+    .weather-status-load-p{
+        width: 3.53rem;
+        height: 0.81rem;
+    }
+    .weather-status-load-r-div{
+        padding-right: 0.5rem;
+    }
+}

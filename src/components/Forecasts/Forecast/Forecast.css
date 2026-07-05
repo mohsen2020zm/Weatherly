@@ -1,0 +1,23 @@
+.forecast-main-div{
+    width: 100%;
+    height: 5rem;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+.forecast-temprature, .forecast-time{
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+@media only screen and (max-width: 480px){
+    .forecast-main-div{
+        height: 4rem;
+    }
+    .forecast-temprature, .forecast-time{
+        font-size: 1.2rem;
+    }
+}

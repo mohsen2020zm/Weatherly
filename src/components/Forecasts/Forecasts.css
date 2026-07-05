@@ -1,0 +1,45 @@
+.forecasts-main-div{
+    width: 20rem;
+    height: 25rem;
+    background-color: var(--elems-color);
+    border-radius: 10px;
+}
+.forecasts-title{
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 1.5rem 1rem;
+}
+.forecasts-div{
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.forecasts-message{
+    font-size: 1.6rem;
+    margin: 6rem 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 992px){
+    .forecasts-main-div{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .forecasts-message{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .forecasts-main-div{
+        height: 20rem;
+    }
+    .forecasts-title{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .forecasts-message{
+        font-size: 1.2rem;
+    }
+}
