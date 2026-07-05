@@ -56,6 +56,13 @@ npm run dev
 
 ---
 
+## 🌐 Live Demo
+```
+https://mohsen2020zm.github.io/Weatherly/
+```
+
+---
+
 ## 🔑 Environment Variables
 
 This project uses the **OpenWeather API**.
