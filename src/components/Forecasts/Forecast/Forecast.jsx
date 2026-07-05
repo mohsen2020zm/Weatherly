@@ -1,6 +1,6 @@
 import './Forecast.css'
 import { useSelector } from 'react-redux'
-import useConvert from '../../../Hooks/useConvert'
+import useConvert from '../../../hooks/useConvert'
 
 export default function Forecast({temp, time}) {
 

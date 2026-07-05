@@ -4,7 +4,7 @@ import WeatherStatusLoading from './WeatherStatusLoading/WeatherStatusLoading'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react'
 import { setName } from '../../redux/Store'
-import useConvert from '../../Hooks/useConvert'
+import useConvert from '../../hooks/useConvert'
 
 export default function WeatherStatus() {
 
