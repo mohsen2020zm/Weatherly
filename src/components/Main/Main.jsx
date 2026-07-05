@@ -1,7 +1,7 @@
 import './Main.css'
 import WeatherStatus from '../WeatherStatus/WeatherStatus';
 import Forecasts from '../Forecasts/Forecasts';
-import WorldForecat from '../WorldForecat/WorldForecat';
+import WorldForecast from '../WorldForecast/WorldForecast';
 
 export default function Main() {
   return (
@@ -10,7 +10,7 @@ export default function Main() {
             <div className='main-flex-div'>
                 <div className="main-l-flex-div">
                     <WeatherStatus />
-                    <WorldForecat />
+                    <WorldForecast />
                 </div>
                 <div className="main-r-flex-div">
                     <Forecasts />

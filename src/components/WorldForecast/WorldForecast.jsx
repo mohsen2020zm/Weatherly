@@ -1,4 +1,4 @@
-import './WorldForecat.css'
+import './WorldForecast.css'
 import City from './City/City'
 import CityLoading from './CityLoading/CityLoading'
 import Modal from '../Modal/Modal'
@@ -6,7 +6,7 @@ import ErrorBox from '../ErrorBox/ErrorBox'
 import { IoMdAdd } from "react-icons/io"
 import { useEffect, useState } from 'react'
 
-export default function WorldForecat() {
+export default function WorldForecast() {
 
   const [errorState, setErrorState] = useState({left: '-16.5rem'})
   

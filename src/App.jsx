@@ -1,16 +1,14 @@
 import './App.css'
-import Header from './Components/Header/Header'
-import Main from './Components/Main/Main'
+import Header from './components/Header/Header'
+import Main from './components/Main/Main'
 import { Provider } from 'react-redux'
 import { Store } from './redux/Store'
 import { useEffect } from 'react'
 
 function App() {
 
-  useEffect(() => {
-    JSON.parse(localStorage.getItem('weatherlyworldfor')) || localStorage.setItem('weatherlyworldfor', JSON.stringify([]))
-  },[])
-
+  JSON.parse(localStorage.getItem('weatherlyworldfor')) || localStorage.setItem('weatherlyworldfor', JSON.stringify([]))
+  
   return (
     <>
       <Provider store={Store}>
